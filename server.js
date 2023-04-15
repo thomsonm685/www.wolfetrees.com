@@ -19,7 +19,7 @@ app.get('/events', function(req, res) {
     res.sendFile(path.join(__dirname, '/front-end/www.brysonstavern.com/events.html'));
 });
   
-app.listen(8001, () => {
+app.listen(process.env.PORT || 8001, () => {
     console.log('listening on port 8001!');  
 })
 console.log('listening on port 8001!');
